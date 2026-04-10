@@ -5,7 +5,7 @@ export default function Login() {
     <main className="min-h-screen bg-[#edf2f7] text-slate-900">
       <div
         className="relative mx-auto flex min-h-screen w-full overflow-hidden bg-white shadow-[0_30px_100px_rgba(15,23,42,0.18)]"
-        style={{ maxWidth: '1600px', borderRadius: '24px' }}
+        style={{ maxWidth: '1600px', borderRadius: '0' }}
       >
         <section className="relative z-10 flex w-full flex-col justify-between bg-white/88 px-6 py-8 backdrop-blur-md sm:px-10 lg:w-[40%] lg:px-12 xl:px-16">
           <div>
