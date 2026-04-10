@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Login() {
   return (
     <main className="min-h-screen bg-[#edf2f7] text-slate-900">
@@ -63,12 +65,12 @@ export default function Login() {
                 <span>Keep me logged in</span>
               </label>
 
-              <button
-                type="submit"
+              <Link
+                to="/overview"
                 className="flex h-11 w-full items-center justify-center rounded-md bg-[#1051ff] text-[12px] font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_12px_30px_rgba(16,81,255,0.35)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#0d47e0] hover:shadow-[0_18px_40px_rgba(16,81,255,0.42)]"
               >
                 Login
-              </button>
+              </Link>
             </form>
           </div>
 

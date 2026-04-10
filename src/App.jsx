@@ -6,20 +6,23 @@ import Adjustments from './components/Dashboard/adjustments.jsx'
 import Notifications from './components/Dashboard/notifications.jsx'
 import Compliances from './components/Dashboard/compliances.jsx'
 import Reports from './components/Dashboard/reports.jsx'
+import Login from './components/login.jsx'
 
 function App() {
  
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Overview />} />
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/overview" element={<Overview />} />
         <Route path="/profiles" element={<Profiles />} />
         <Route path="/scheduling" element={<Scheduling />} />
         <Route path="/adjustments" element={<Adjustments />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/compliances" element={<Compliances />} />
         <Route path="/reports" element={<Reports />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
   )

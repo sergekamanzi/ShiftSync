@@ -10,6 +10,7 @@ import {
 	FiLayers,
 	FiMenu,
 	FiMoon,
+	FiLogOut,
 	FiMoreVertical,
 	FiPieChart,
 	FiPlus,
@@ -132,13 +133,13 @@ export default function Reports() {
 					<div className="mb-10 flex items-center gap-3">
 						<span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0f51ff] text-sm font-black text-white shadow-[0_14px_30px_rgba(15,81,255,0.35)]">A</span>
 						<div>
-							<div className="text-[19px] font-extrabold leading-5 tracking-[-0.04em] text-slate-900">The Fluid<br />Architect</div>
+							<div className="text-[19px] font-extrabold leading-5 tracking-[-0.04em] text-slate-900">ShiftSync</div>
 							<div className="mt-1 text-[11px] font-medium uppercase tracking-[0.28em] text-slate-500">Workforce Management</div>
 						</div>
 					</div>
 
 					<nav className="space-y-2 text-[14px] font-medium text-slate-600">
-						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/"><FiHome className="h-4 w-4" /> Dashboard Overview</Link>
+						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/overview"><FiHome className="h-4 w-4" /> Dashboard Overview</Link>
 						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/profiles"><FiUsers className="h-4 w-4" /> Employee Profiles</Link>
 						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/scheduling"><FiCalendar className="h-4 w-4" /> Shift Scheduling</Link>
 						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/adjustments"><FiSliders className="h-4 w-4" /> Shift Adjustments</Link>
@@ -151,7 +152,7 @@ export default function Reports() {
 						<button className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#0f51ff] px-4 py-3 text-sm font-bold text-white shadow-[0_14px_32px_rgba(15,81,255,0.32)] transition hover:-translate-y-0.5 hover:bg-[#0b44de]"><FiPlus className="h-4 w-4" /> Export Snapshot</button>
 						<div className="space-y-1 text-sm text-slate-600">
 							<a className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" href="#settings"><FiSettings className="h-4 w-4" /> Settings</a>
-							<a className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" href="#support"><FiHelpCircle className="h-4 w-4" /> Support</a>
+							<Link className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left font-semibold text-rose-600 hover:bg-rose-50" to="/login"><FiLogOut className="h-4 w-4" /> Logout</Link>
 						</div>
 					</div>
 				</aside>
@@ -163,7 +164,7 @@ export default function Reports() {
 							<div className="flex min-w-0 items-center gap-3">
 								<span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#0f51ff] text-xs font-black text-white">A</span>
 								<div className="min-w-0">
-									<div className="truncate text-sm font-extrabold text-slate-900">The Fluid Architect</div>
+									<div className="truncate text-sm font-extrabold text-slate-900">ShiftSync</div>
 									<div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Workforce Management</div>
 								</div>
 							</div>
@@ -176,7 +177,7 @@ export default function Reports() {
 							</label>
 
 							<div className="flex items-center justify-between gap-3 xl:justify-end">
-								<button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-[0_6px_16px_rgba(15,23,42,0.05)]"><FiHelpCircle className="h-4 w-4" /></button>
+								<button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-[0_6px_16px_rgba(15,23,42,0.05)]"><FiBell className="h-4 w-4" /></button>
 								<button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-[0_6px_16px_rgba(15,23,42,0.05)]"><FiMoon className="h-4 w-4" /></button>
 								<div className="flex items-center gap-3 rounded-full bg-white px-3 py-2 shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
 									<div className="text-right leading-tight">
