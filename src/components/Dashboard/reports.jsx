@@ -48,7 +48,7 @@ function MetricCard({ item }) {
 	const Icon = item.icon
 
 	return (
-		<article className="rounded-[22px] border border-slate-200/80 bg-white p-5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]">
+		<article className="rounded-[22px] border border-slate-200/80 bg-white p-5">
 			<div className="flex items-start justify-between gap-3">
 				<div className={`flex h-10 w-10 items-center justify-center rounded-2xl ${item.accent}`}>
 					<Icon className="h-5 w-5" />
@@ -63,7 +63,7 @@ function MetricCard({ item }) {
 
 function BarChart() {
 	return (
-		<div className="rounded-[26px] border border-slate-200/80 bg-white p-5 shadow-[0_12px_30px_rgba(15,23,42,0.06)] sm:p-6">
+		<div className="rounded-[26px] border border-slate-200/80 bg-white p-5 sm:p-6">
 			<div className="flex items-start justify-between gap-3">
 				<div>
 					<h2 className="text-xl font-black tracking-[-0.04em] text-slate-950">Attendance Trends</h2>
@@ -93,14 +93,14 @@ function BarChart() {
 
 function DistributionCard() {
 	return (
-		<div className="rounded-[26px] border border-slate-200/80 bg-[#eef3ff] p-5 shadow-[0_12px_30px_rgba(15,23,42,0.06)] sm:p-6">
+		<div className="rounded-[26px] border border-slate-200/80 bg-[#eef3ff] p-5 sm:p-6">
 			<h2 className="text-xl font-black tracking-[-0.04em] text-slate-950">Shift Distribution</h2>
 			<p className="mt-1 text-sm text-slate-500">Workforce split by department</p>
 
 			<div className="mt-6 flex items-center justify-center">
-				<div className="relative flex h-44 w-44 items-center justify-center rounded-full bg-white shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
+				<div className="relative flex h-44 w-44 items-center justify-center rounded-full bg-white">
 					<div className="absolute inset-0 rounded-full bg-[conic-gradient(#4d63b8_0_74%,#e8eeff_74%_100%)]" />
-					<div className="relative flex h-32 w-32 items-center justify-center rounded-full bg-white shadow-[0_8px_20px_rgba(15,23,42,0.05)]">
+					<div className="relative flex h-32 w-32 items-center justify-center rounded-full bg-white">
 						<div className="text-center">
 							<div className="text-3xl font-black tracking-[-0.06em] text-slate-950">74%</div>
 							<div className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-slate-500">Capacity</div>
@@ -111,7 +111,7 @@ function DistributionCard() {
 
 			<div className="mt-6 space-y-3">
 				{distribution.map((item) => (
-					<div key={item.label} className="flex items-center justify-between rounded-2xl bg-white px-4 py-3 text-sm shadow-[0_8px_20px_rgba(15,23,42,0.05)]">
+					<div key={item.label} className="flex items-center justify-between rounded-2xl bg-white px-4 py-3 text-sm">
 						<div className="flex items-center gap-3 font-semibold text-slate-700"><span className={`h-2.5 w-2.5 rounded-full ${item.tone}`} />{item.label}</div>
 						<div className="font-bold text-slate-900">{item.value}</div>
 					</div>
@@ -128,10 +128,10 @@ function StatusBadge({ danger, children }) {
 export default function Reports() {
 	return (
 		<main className="h-screen overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.12),transparent_34%),linear-gradient(180deg,#eef4ff_0%,#f7f9ff_38%,#eef2ff_100%)] text-slate-900">
-			<div className="flex h-screen w-full overflow-hidden border border-white/80 bg-white/85 shadow-[0_30px_90px_rgba(15,23,42,0.14)] backdrop-blur-xl">
-				<aside className="flex w-full shrink-0 flex-col overflow-hidden border-r border-slate-200/80 bg-[#f2f6ff]/80 px-5 py-6 xl:fixed xl:left-0 xl:top-0 xl:h-screen" style={{ width: '290px', maxWidth: '290px' }}>
+			<div className="flex h-screen w-full overflow-hidden border border-white/80 bg-white/85 backdrop-blur-xl">
+				<aside className="flex w-full shrink-0 flex-col overflow-hidden border-r border-slate-200/80 bg-[#f2f6ff]/80 px-5 py-6 xl:fixed xl:left-0 xl:top-0 xl:h-screen" style={{ width: '264px', maxWidth: '264px' }}>
 					<div className="mb-10 flex items-center gap-3">
-						<span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0f51ff] text-sm font-black text-white shadow-[0_14px_30px_rgba(15,81,255,0.35)]">A</span>
+						<span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0f51ff] text-sm font-black text-white">A</span>
 						<div>
 							<div className="text-[19px] font-extrabold leading-5 tracking-[-0.04em] text-slate-900">ShiftSync</div>
 							<div className="mt-1 text-[11px] font-medium uppercase tracking-[0.28em] text-slate-500">Workforce Management</div>
@@ -145,11 +145,11 @@ export default function Reports() {
 						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/adjustments"><FiSliders className="h-4 w-4" /> Shift Adjustments</Link>
 						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/notifications"><FiBell className="h-4 w-4" /> Notifications</Link>
 						<Link className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" to="/compliances"><FiLayers className="h-4 w-4" /> Compliance & Policies</Link>
-						<Link className="flex items-center gap-3 rounded-xl bg-white px-4 py-3 font-semibold text-[#0f51ff] shadow-[0_10px_24px_rgba(15,23,42,0.06)]" to="/reports"><FiPieChart className="h-4 w-4" /> Reports & Analytics</Link>
+						<Link className="flex items-center gap-3 rounded-xl bg-white px-4 py-3 font-semibold text-[#0f51ff]" to="/reports"><FiPieChart className="h-4 w-4" /> Reports & Analytics</Link>
 					</nav>
 
-					<div className="mt-8 space-y-3">
-						<button className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#0f51ff] px-4 py-3 text-sm font-bold text-white shadow-[0_14px_32px_rgba(15,81,255,0.32)] transition hover:-translate-y-0.5 hover:bg-[#0b44de]"><FiPlus className="h-4 w-4" /> Export Snapshot</button>
+					<div className="mt-auto space-y-3 pt-8">
+						<button className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#0f51ff] px-4 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#0b44de]"><FiPlus className="h-4 w-4" /> Export Snapshot</button>
 						<div className="space-y-1 text-sm text-slate-600">
 							<a className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-white/70" href="#settings"><FiSettings className="h-4 w-4" /> Settings</a>
 							<Link className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left font-semibold text-rose-600 hover:bg-rose-50" to="/login"><FiLogOut className="h-4 w-4" /> Logout</Link>
@@ -160,7 +160,7 @@ export default function Reports() {
 				<div className="dashboard-main-offset flex min-h-0 flex-1 flex-col h-screen overflow-hidden">
 					<header className="sticky top-0 z-20 border-b border-slate-200/80 bg-white/75 px-4 py-4 backdrop-blur-xl sm:px-6 xl:px-8">
 						<div className="flex items-center gap-3 xl:hidden">
-							<button className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-slate-700 shadow-[0_8px_20px_rgba(15,23,42,0.08)]"><FiMenu className="h-5 w-5" /></button>
+							<button className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-slate-700"><FiMenu className="h-5 w-5" /></button>
 							<div className="flex min-w-0 items-center gap-3">
 								<span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#0f51ff] text-xs font-black text-white">A</span>
 								<div className="min-w-0">
@@ -173,13 +173,13 @@ export default function Reports() {
 						<div className="mt-4 flex flex-col gap-4 xl:mt-0 xl:flex-row xl:items-center xl:justify-between">
 							<label className="relative w-full max-w-3xl">
 								<FiSearch className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-								<input type="search" placeholder="Search reports, logs, or metrics..." className="h-12 w-full rounded-full border border-slate-200/80 bg-[#f5f7ff] px-11 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#0f51ff] focus:bg-white focus:shadow-[0_0_0_4px_rgba(15,81,255,0.12)]" />
+								<input type="search" placeholder="Search reports, logs, or metrics..." className="h-12 w-full rounded-full border border-slate-200/80 bg-[#f5f7ff] px-11 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#0f51ff] focus:bg-white" />
 							</label>
 
 							<div className="flex items-center justify-between gap-3 xl:justify-end">
-								<button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-[0_6px_16px_rgba(15,23,42,0.05)]"><FiBell className="h-4 w-4" /></button>
-								<button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-[0_6px_16px_rgba(15,23,42,0.05)]"><FiMoon className="h-4 w-4" /></button>
-								<div className="flex items-center gap-3 rounded-full bg-white px-3 py-2 shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
+								<button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500"><FiBell className="h-4 w-4" /></button>
+								<button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500"><FiMoon className="h-4 w-4" /></button>
+								<div className="flex items-center gap-3 rounded-full bg-white px-3 py-2">
 									<div className="text-right leading-tight">
 										<div className="text-sm font-bold text-slate-900">Alex Thompson</div>
 										<div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">Shift Manager</div>
@@ -199,13 +199,13 @@ export default function Reports() {
 									<p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500 sm:text-base">Real-time workforce performance and shift optimization metrics.</p>
 								</div>
 								<div className="flex flex-wrap items-center gap-3">
-									<div className="inline-flex rounded-2xl bg-[#f3f6ff] p-1 text-sm font-semibold text-slate-500 shadow-[inset_0_1px_0_rgba(255,255,255,0.8)]">
-										<button className="rounded-xl bg-white px-4 py-2 text-[#0f51ff] shadow-[0_8px_16px_rgba(15,23,42,0.06)]">Last 30 Days</button>
+									<div className="inline-flex rounded-2xl bg-[#f3f6ff] p-1 text-sm font-semibold text-slate-500">
+										<button className="rounded-xl bg-white px-4 py-2 text-[#0f51ff]">Last 30 Days</button>
 										<button className="rounded-xl px-4 py-2">Quarterly</button>
 										<button className="rounded-xl px-4 py-2">Yearly</button>
 									</div>
-									<button className="inline-flex items-center gap-2 rounded-2xl bg-[#e8eeff] px-4 py-3 text-sm font-bold text-slate-700 shadow-[0_8px_16px_rgba(15,23,42,0.06)]"><FiFilter className="h-4 w-4" /> Filter</button>
-									<button className="inline-flex items-center gap-2 rounded-2xl bg-[#0f51ff] px-4 py-3 text-sm font-bold text-white shadow-[0_14px_32px_rgba(15,81,255,0.32)]"><FiDownload className="h-4 w-4" /> Export <FiChevronDown className="h-4 w-4" /></button>
+									<button className="inline-flex items-center gap-2 rounded-2xl bg-[#e8eeff] px-4 py-3 text-sm font-bold text-slate-700"><FiFilter className="h-4 w-4" /> Filter</button>
+									<button className="inline-flex items-center gap-2 rounded-2xl bg-[#0f51ff] px-4 py-3 text-sm font-bold text-white"><FiDownload className="h-4 w-4" /> Export <FiChevronDown className="h-4 w-4" /></button>
 								</div>
 							</div>
 
@@ -218,7 +218,7 @@ export default function Reports() {
 								<DistributionCard />
 							</div>
 
-							<article className="rounded-[26px] border border-slate-200/80 bg-white p-5 shadow-[0_12px_30px_rgba(15,23,42,0.06)] sm:p-6">
+							<article className="rounded-[26px] border border-slate-200/80 bg-white p-5 sm:p-6">
 								<div className="flex items-center justify-between gap-3">
 									<div>
 										<h2 className="text-xl font-black tracking-[-0.04em] text-slate-950">Recent Shift Compliance</h2>

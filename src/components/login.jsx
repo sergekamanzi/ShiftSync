@@ -4,13 +4,13 @@ export default function Login() {
   return (
     <main className="min-h-screen bg-[#edf2f7] text-slate-900">
       <div
-        className="relative mx-auto flex min-h-screen w-full overflow-hidden bg-white shadow-[0_30px_100px_rgba(15,23,42,0.18)]"
+        className="relative mx-auto flex min-h-screen w-full overflow-hidden bg-white"
         style={{ maxWidth: '1600px', borderRadius: '0' }}
       >
         <section className="relative z-10 flex w-full flex-col justify-between bg-white/88 px-6 py-8 backdrop-blur-md sm:px-10 lg:w-[40%] lg:px-12 xl:px-16">
           <div>
             <div className="mb-10 inline-flex items-center gap-3 rounded-full bg-white/80 px-0 py-0">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1051ff] text-[15px] font-bold text-white shadow-[0_8px_24px_rgba(16,81,255,0.35)]">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1051ff] text-[15px] font-bold text-white">
                 SS
               </span>
               <span className="text-[15px] font-medium tracking-[-0.01em] text-slate-950">
@@ -34,7 +34,7 @@ export default function Login() {
                 <input
                   type="email"
                   placeholder="name@organization.com"
-                  className="h-11 w-full rounded-md border border-slate-200 bg-[#f8faff] px-4 text-[14px] text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#1051ff] focus:bg-white focus:shadow-[0_0_0_4px_rgba(16,81,255,0.12)]"
+                  className="h-11 w-full rounded-md border border-slate-200 bg-[#f8faff] px-4 text-[14px] text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#1051ff] focus:bg-white"
                 />
               </label>
 
@@ -53,7 +53,7 @@ export default function Login() {
                 <input
                   type="password"
                   placeholder="••••••••"
-                  className="h-11 w-full rounded-md border border-slate-200 bg-[#f8faff] px-4 text-[18px] tracking-[0.3em] text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#1051ff] focus:bg-white focus:shadow-[0_0_0_4px_rgba(16,81,255,0.12)]"
+                  className="h-11 w-full rounded-md border border-slate-200 bg-[#f8faff] px-4 text-[18px] tracking-[0.3em] text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#1051ff] focus:bg-white"
                 />
               </div>
 
@@ -67,7 +67,7 @@ export default function Login() {
 
               <Link
                 to="/overview"
-                className="flex h-11 w-full items-center justify-center rounded-md bg-[#1051ff] text-[12px] font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_12px_30px_rgba(16,81,255,0.35)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#0d47e0] hover:shadow-[0_18px_40px_rgba(16,81,255,0.42)]"
+                className="flex h-11 w-full items-center justify-center rounded-md bg-[#1051ff] text-[12px] font-extrabold uppercase tracking-[0.18em] text-white transition duration-200 hover:-translate-y-0.5 hover:bg-[#0d47e0]"
               >
                 Login
               </Link>
@@ -93,12 +93,12 @@ export default function Login() {
           />
           <div className="absolute inset-0 backdrop-blur-[1px]" />
 
-          <div className="absolute right-10 top-10 rounded-full bg-white px-4 py-2 text-[12px] font-semibold text-slate-700 shadow-[0_10px_30px_rgba(15,23,42,0.08)] backdrop-blur-md">
+          <div className="absolute right-10 top-10 rounded-full bg-white px-4 py-2 text-[12px] font-semibold text-slate-700 backdrop-blur-md">
             Workforce Intelligence
           </div>
 
           <div
-            className="absolute bottom-12 right-10 rounded-[14px] bg-white/88 px-8 py-7 text-center shadow-[0_24px_70px_rgba(15,23,42,0.16)] backdrop-blur-md"
+            className="absolute bottom-12 right-10 rounded-[14px] bg-white/88 px-8 py-7 text-center backdrop-blur-md"
             style={{ maxWidth: '310px' }}
           >
             <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#edf2ff] text-[#1051ff]">
