@@ -9,14 +9,14 @@ export default function Login() {
       >
         <section className="relative z-10 flex w-full flex-col justify-between bg-white/88 px-6 py-8 backdrop-blur-md sm:px-10 lg:w-[40%] lg:px-12 xl:px-16">
           <div>
-            <div className="mb-10 inline-flex items-center gap-3 rounded-full bg-white/80 px-0 py-0">
+            <Link to="/" className="mb-10 inline-flex items-center gap-3 rounded-full bg-white/80 px-0 py-0">
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1051ff] text-[15px] font-bold text-white">
                 SS
               </span>
               <span className="text-[15px] font-medium tracking-[-0.01em] text-slate-950">
                 ShiftSync
               </span>
-            </div>
+            </Link>
 
             <h1 className="max-w-sm text-[34px] font-extrabold tracking-[-0.05em] text-slate-950 sm:text-[44px]">
               Welcome Back
@@ -66,7 +66,7 @@ export default function Login() {
               </label>
 
               <Link
-                to="/overview"
+                to="/dashboard"
                 className="flex h-11 w-full items-center justify-center rounded-md bg-[#1051ff] text-[12px] font-extrabold uppercase tracking-[0.18em] text-white transition duration-200 hover:-translate-y-0.5 hover:bg-[#0d47e0]"
               >
                 Login
