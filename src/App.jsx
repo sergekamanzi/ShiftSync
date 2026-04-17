@@ -7,6 +7,12 @@ import Notifications from './components/Dashboard/notifications.jsx'
 import Compliances from './components/Dashboard/compliances.jsx'
 import Reports from './components/Dashboard/reports.jsx'
 import Login from './components/login.jsx'
+import EmployeeOverview from './components/Employee/employee_overview.jsx'
+import MySchedule from './components/Employee/my_schedule.jsx'
+import Announcements from './components/Employee/announcements.jsx'
+import EarningsAndPays from './components/Employee/earnings&pays.jsx'
+import Profile from './components/Employee/profile.jsx'
+import EmployeeNotifications from './components/Employee/notifications.jsx'
 import Landing from './pages/landing.jsx'
 
 function App() {
@@ -17,6 +23,12 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Navigate to="/overview" replace />} />
+        <Route path="/employee-dashboard" element={<EmployeeOverview />} />
+        <Route path="/employee-schedule" element={<MySchedule />} />
+        <Route path="/employee-announcements" element={<Announcements />} />
+        <Route path="/employee-earnings" element={<EarningsAndPays />} />
+        <Route path="/employee-profile" element={<Profile />} />
+        <Route path="/employee-notifications" element={<EmployeeNotifications />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="/profiles" element={<Profiles />} />
         <Route path="/scheduling" element={<Scheduling />} />
