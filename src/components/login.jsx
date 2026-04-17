@@ -71,6 +71,21 @@ export default function Login() {
               >
                 Login
               </Link>
+
+              <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                <Link
+                  to="/dashboard"
+                  className="flex h-10 w-full items-center justify-center rounded-md border border-[#1051ff] bg-white text-[11px] font-bold uppercase tracking-[0.12em] text-[#1051ff] transition hover:bg-[#edf2ff]"
+                >
+                  Manager
+                </Link>
+                <Link
+                  to="/employee-dashboard"
+                  className="flex h-10 w-full items-center justify-center rounded-md border border-slate-300 bg-white text-[11px] font-bold uppercase tracking-[0.12em] text-slate-700 transition hover:bg-slate-50"
+                >
+                  Employee
+                </Link>
+              </div>
             </form>
           </div>
 
