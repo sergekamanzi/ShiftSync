@@ -2,67 +2,67 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const navLinks = [
-	{ label: 'Solutions', href: '#' },
-	{ label: 'Methodology', href: '#' },
-	{ label: 'Contacts', href: '#' },
+	{ label: 'Features', href: '#' },
+	{ label: 'Workflow', href: '#' },
+	{ label: 'Contact', href: '#' },
 ]
 
-const partnerLogos = ['Astra', 'Lumina', 'Vertex', 'Core', 'Orion']
+const partnerLogos = ['Scheduling', 'Coverage', 'Compliance', 'Allocation', 'Reporting']
 
 const precisionCards = [
 	{
-		label: '01 / Algorithm',
-		title: 'Smart Allocation',
+		label: '01 / Allocation',
+		title: 'Smart Shift Creation',
 		description:
-			'Proprietary asymmetrical balancing that aligns operational overhead with human-centric availability protocols.',
+			'Generate employee shifts with intelligent logic that matches staffing demand, availability, and workload balance.',
 	},
 	{
-		label: '02 / Governance',
-		title: 'Policy Guardrails',
+		label: '02 / Fairness',
+		title: 'Balanced Distribution',
 		description:
-			'Automated real-time compliance detection across multi-jurisdictional labor standards and internal mandates.',
+			'Promote fair shift assignment across teams while reducing bias, overlap, and scheduling conflicts.',
 	},
 	{
-		label: '03 / Analysis',
-		title: 'Tonal Analytics',
+		label: '03 / Coverage',
+		title: 'Policy-Aware Coverage',
 		description:
-			'High-fidelity visualization utilizing tonal layering to surface critical bottlenecks before they impact output.',
+			'Maintain optimal staff coverage and align every schedule with organizational rules and operational needs.',
 	},
 ]
 
 const workflowPhases = [
 	{
 		label: 'Phase 01',
-		title: 'Structural Mapping',
+		title: 'Input Workforce Rules',
 		description:
-			'We ingest complex organizational lattices, mapping skills, demand patterns, and constraints into one unified model.',
+			'Define employee availability, shift requirements, and organizational policies in one scheduling workspace.',
 	},
 	{
 		label: 'Phase 02',
-		title: 'Predictive Simulation',
+		title: 'Generate Smart Schedules',
 		description:
-			'Run high-velocity scenarios to optimize operational excellence and employee retention simultaneously.',
+			'Use intelligent scheduling logic to allocate shifts fairly, reduce manual effort, and avoid common planning errors.',
 	},
 	{
 		label: 'Phase 03',
-		title: 'Elastic Deployment',
+		title: 'Monitor And Adjust',
 		description:
-			'Dynamically publish schedules and staffing plans, then pivot in real time as market or internal variables shift.',
+			'Review coverage, track changes, and update assignments quickly when staffing needs shift.',
 	},
 ]
 
 const footerColumns = [
 	{
-		title: 'Solutions',
-		items: ['Precision Scheduling', 'Labor Compliance', 'Predictive Demand', 'API Integration'],
+		title: 'Features',
+		items: ['Shift Scheduling', 'Coverage Tracking', 'Compliance Rules', 'Reports'],
 	},
 	{
-		title: 'Infrastructure',
-		items: ['Data Architecture', 'Security Protocols', 'System Status', 'Documentation'],
+		title: 'Workflow',
+		items: ['Availability Input', 'Auto Allocation', 'Schedule Review', 'Adjustments'],
 	},
 	{
-		title: 'Organization',
-		items: ['Our Science', 'Executive Team', 'Investor Relations', 'Press Kit'],
+		title: 'ShiftSync',
+		items: ['System Overview', 'Scheduling Logic', 'Admin Dashboard', 'Employee Access'],
 	},
 ]
 
@@ -76,7 +76,7 @@ function Landing() {
 					<div className="flex h-16 items-center justify-between px-4 sm:px-6">
 						<a href="#" className="flex items-center gap-3">
 							<div className="flex h-9 w-9 items-center justify-center rounded-sm bg-blue-700 text-white">
-								<span className="text-sm font-semibold">A</span>
+								<span className="text-sm font-semibold">S</span>
 							</div>
 							<span className="text-sm font-semibold uppercase tracking-[0.12em] text-slate-900 sm:text-base">
 								ShiftSync
@@ -112,7 +112,7 @@ function Landing() {
 								to="/login"
 								className="rounded-sm bg-blue-700 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-blue-800"
 							>
-								start free trial
+								staff login
 							</Link>
 						</div>
 
@@ -161,7 +161,7 @@ function Landing() {
 									href="#"
 									className="rounded-sm bg-blue-700 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-blue-800"
 								>
-									Contact Sales
+									Contact Team
 								</a>
 							</div>
 						</div>
@@ -182,20 +182,20 @@ function Landing() {
 					<div className="relative grid items-center gap-8 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
 						<div className="order-1">
 							<span className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-blue-700 sm:text-xs">
-								Enterprise Grade Workforce Planning
+								Intelligent Employee Shift Scheduling
 							</span>
 
 							<h1 className="mt-6 text-5xl font-black leading-[0.95] text-slate-900 sm:text-6xl lg:text-7xl">
-								Optimize
+								Plan
 								<br />
-								Human
+								Shifts
 								<br />
-								<span className="italic text-blue-700">Capital.</span>
+								<span className="italic text-blue-700">Intelligently.</span>
 							</h1>
 
 							<p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-								The next generation of workforce management. Leverage predictive modeling and precision
-								logic to architect fluid organizational schedules.
+								ShiftSync is an intelligent employee shift scheduling system that automates creation,
+								allocation, and management of work shifts to improve fairness, coverage, and efficiency.
 							</p>
 
 							<div className="mt-8 flex flex-wrap items-center gap-4">
@@ -203,14 +203,14 @@ function Landing() {
 									href="#"
 									className="inline-flex min-h-12 items-center justify-center rounded-sm bg-slate-900 px-7 text-xs font-bold uppercase tracking-[0.2em] text-white transition hover:bg-slate-800"
 								>
-									Start Optimization
+									Open Dashboard
 								</a>
 
 								<a
 									href="#"
 									className="inline-flex min-h-12 items-center border-b-2 border-blue-400 px-2 text-xs font-bold uppercase tracking-[0.2em] text-slate-700 transition hover:text-blue-700"
 								>
-									View Scientific Methodology
+									View Scheduling Workflow
 								</a>
 							</div>
 						</div>
@@ -222,7 +222,7 @@ function Landing() {
 								className="h-80 w-full object-cover sm:h-95 lg:h-110"
 							/>
 							<p className="mt-3 text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">
-								Overview of our system and how it works.
+								Overview of automated scheduling, staff allocation, and coverage management.
 							</p>
 						</div>
 					</div>
@@ -233,7 +233,7 @@ function Landing() {
 				<div className="mx-auto w-full max-w-375 px-4 py-12 sm:px-8 sm:py-14 lg:px-10 lg:py-20">
 					<div className="border-y border-slate-200 py-4">
 						<p className="text-center text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400 sm:text-xs">
-							Trusted By Global Infrastructure Leaders
+							Built Around Core Scheduling Workflows
 						</p>
 						<div className="relative mt-4 overflow-hidden">
 							<div
@@ -265,11 +265,11 @@ function Landing() {
 
 					<div className="mt-12 grid items-start gap-8 lg:grid-cols-2 lg:gap-14">
 						<h2 className="max-w-xl text-4xl font-black leading-tight text-slate-900 sm:text-5xl">
-							Precision Primitives for Global Enterprise.
+							One system for fair, efficient shift planning.
 						</h2>
 						<p className="max-w-2xl text-lg leading-relaxed text-slate-600">
-							Our framework prioritizes structural integrity and high-fidelity data interpretation. We strip
-							away dashboard noise to reveal the essential patterns of your workforce.
+							ShiftSync reduces manual scheduling errors and administrative workload while helping teams
+							maintain fair shift distribution, policy compliance, and optimal staff coverage.
 						</p>
 					</div>
 
@@ -294,7 +294,7 @@ function Landing() {
 						<div>
 							<p className="text-xs font-bold uppercase tracking-[0.22em] text-blue-400">How It Works</p>
 							<h2 className="mt-4 text-4xl font-black leading-tight text-white sm:text-5xl">
-								The Architectural
+								The Scheduling
 								<br />
 								<span className="text-blue-400">Workflow</span>
 							</h2>
@@ -329,14 +329,14 @@ function Landing() {
 						<div>
 							<div className="flex items-center gap-3">
 								<div className="flex h-9 w-9 items-center justify-center rounded-sm bg-slate-900 text-white">
-									<span className="text-sm font-semibold">A</span>
+									<span className="text-sm font-semibold">S</span>
 								</div>
 								<p className="text-2xl font-black uppercase tracking-[0.04em] text-slate-800">ShiftSync</p>
 							</div>
 
 							<p className="mt-7 max-w-md text-sm leading-relaxed text-slate-600 sm:text-base">
-								Establishing the global benchmark for enterprise workforce management through editorial-grade
-								design and predictive organizational logic.
+								An intelligent employee shift scheduling system designed to automate planning, improve
+								coverage, and support fair workforce management.
 							</p>
 
 							<div className="mt-7 flex items-center gap-4 text-slate-500">
@@ -382,13 +382,13 @@ function Landing() {
 
 						<div>
 							<h3 className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-slate-500">Contact</h3>
-							<p className="mt-5 text-xs text-slate-600">Global Headquarters</p>
-							<p className="mt-4 text-xs font-bold leading-snug text-slate-800">London • New York • Singapore</p>
+							<p className="mt-5 text-xs text-slate-600">Project Support</p>
+							<p className="mt-4 text-xs font-bold leading-snug text-slate-800">Workforce Management System</p>
 							<a
 								href="#"
 								className="mt-6 inline-flex text-[9px] font-extrabold uppercase tracking-[0.14em] text-blue-700 transition hover:text-blue-800"
 							>
-								Inquire Now
+								Contact Us
 							</a>
 						</div>
 					</div>
@@ -396,17 +396,17 @@ function Landing() {
 					<div className="mt-12 border-t border-slate-300 pt-8">
 						<div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
 							<p className="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">
-								© 2026 The Shift Sync. High-Fidelity Infrastructure.
+								© 2026 ShiftSync. Intelligent Shift Scheduling.
 							</p>
 							<div className="flex flex-wrap items-center gap-6 sm:gap-10">
 								<a href="#" className="text-sm font-bold uppercase tracking-[0.2em] text-slate-400 transition hover:text-slate-700">
 									Privacy Policy
 								</a>
 								<a href="#" className="text-sm font-bold uppercase tracking-[0.2em] text-slate-400 transition hover:text-slate-700">
-									Governance
+									Compliance
 								</a>
 								<a href="#" className="text-sm font-bold uppercase tracking-[0.2em] text-slate-400 transition hover:text-slate-700">
-									Terms Of Architecture
+									Terms Of Service
 								</a>
 							</div>
 						</div>
