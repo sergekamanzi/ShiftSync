@@ -72,6 +72,13 @@ export default function Login() {
                 Login
               </Link>
 
+              <Link
+                to="/admin-overview"
+                className="flex h-11 w-full items-center justify-center rounded-md border border-[#1051ff] bg-white text-[12px] font-extrabold uppercase tracking-[0.18em] text-[#1051ff] transition duration-200 hover:-translate-y-0.5 hover:bg-[#edf2ff]"
+              >
+                Admin
+              </Link>
+
               <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 <Link
                   to="/dashboard"
