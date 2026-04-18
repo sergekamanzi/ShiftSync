@@ -75,12 +75,7 @@ function Landing() {
 				<nav className="relative rounded-md border border-slate-200 bg-white/95 shadow-sm">
 					<div className="flex h-16 items-center justify-between px-4 sm:px-6">
 						<a href="#" className="flex items-center gap-3">
-							<div className="flex h-9 w-9 items-center justify-center rounded-sm bg-blue-700 text-white">
-								<span className="text-sm font-semibold">S</span>
-							</div>
-							<span className="text-sm font-semibold uppercase tracking-[0.12em] text-slate-900 sm:text-base">
-								ShiftSync
-							</span>
+							<img src="/logo.png" alt="ShiftSync" className="h-19 w-auto object-contain" />
 						</a>
 
 						<ul className="hidden items-center gap-10 md:flex">
@@ -328,10 +323,7 @@ function Landing() {
 					<div className="grid gap-10 lg:grid-cols-[1.25fr_2fr_1fr] lg:gap-12">
 						<div>
 							<div className="flex items-center gap-3">
-								<div className="flex h-9 w-9 items-center justify-center rounded-sm bg-slate-900 text-white">
-									<span className="text-sm font-semibold">S</span>
-								</div>
-								<p className="text-2xl font-black uppercase tracking-[0.04em] text-slate-800">ShiftSync</p>
+								<img src="/logo.png" alt="ShiftSync" className="h-19 w-auto object-contain" />
 							</div>
 
 							<p className="mt-7 max-w-md text-sm leading-relaxed text-slate-600 sm:text-base">
