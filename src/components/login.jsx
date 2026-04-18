@@ -9,13 +9,10 @@ export default function Login() {
       >
         <section className="relative z-10 flex w-full flex-col justify-between bg-white/88 px-6 py-8 backdrop-blur-md sm:px-10 lg:w-[40%] lg:px-12 xl:px-16">
           <div>
-            <Link to="/" className="mb-10 inline-flex items-center gap-3 rounded-full bg-white/80 px-0 py-0">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1051ff] text-[15px] font-bold text-white">
-                SS
-              </span>
-              <span className="text-[15px] font-medium tracking-[-0.01em] text-slate-950">
-                ShiftSync
-              </span>
+            <Link to="/" className="mb-2 inline-flex items-center gap-3 rounded-full bg-white/80 px-0 py-0">
+              <div className="flex items-center gap-3">
+                <img src="/logo.png" alt="ShiftSync" className="h-19 w-auto object-contain" />
+              </div>
             </Link>
 
             <h1 className="max-w-sm text-[34px] font-extrabold tracking-[-0.05em] text-slate-950 sm:text-[44px]">
