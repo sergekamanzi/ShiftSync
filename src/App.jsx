@@ -8,6 +8,11 @@ import Compliances from './components/Dashboard/compliances.jsx'
 import Reports from './components/Dashboard/reports.jsx'
 import Login from './components/login.jsx'
 import EmployeeOverview from './components/Employee/employee_overview.jsx'
+import SystemOverview from './components/Admin/system_overview.jsx'
+import UserManagement from './components/Admin/user_management.jsx'
+import AuditLogs from './components/Admin/auditlogs.jsx'
+import ApiIntegrations from './components/Admin/api.jsx'
+import AdminSettings from './components/Admin/admin_settings.jsx'
 import MySchedule from './components/Employee/my_schedule.jsx'
 import Announcements from './components/Employee/announcements.jsx'
 import EarningsAndPays from './components/Employee/earnings&pays.jsx'
@@ -23,6 +28,11 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Navigate to="/overview" replace />} />
+        <Route path="/admin-overview" element={<SystemOverview />} />
+        <Route path="/admin-user-management" element={<UserManagement />} />
+        <Route path="/admin-auditlogs" element={<AuditLogs />} />
+        <Route path="/admin-api" element={<ApiIntegrations />} />
+        <Route path="/admin-settings" element={<AdminSettings />} />
         <Route path="/employee-dashboard" element={<EmployeeOverview />} />
         <Route path="/employee-schedule" element={<MySchedule />} />
         <Route path="/employee-announcements" element={<Announcements />} />
